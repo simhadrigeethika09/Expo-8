@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head><title>Task22</title>
+ <script>
+        function showConfirmation() {
+            alert("Thank you for registering!");
+        }
+    </script>
+</head>
+<body>
+<center><h2><u>EVENT REGISTRATION FORM</u></h2></center>
+<form onsubmit="showConfirmation(); return false;">
+NAME        :
+<input type="text" name="fullname" required><br><br>
+EMAIL       :
+<input type="text" name="email" required><br><br>
+PHONE:
+<input type="text" name ="phone" required><br><br>
+
+<h3><u>CHOOSE YOUR GENDER:</u></h3>
+<input type="radio" name="gender" value="male" required>MALE<br><br>
+<input type="radio" name="gender" value="female" required>FEMALE<br><br>
+<input type="radio" name="gender" value="other" required>OTHER<br><br>
+<h3><u>YOUR INTRESTS:</u></h3>
+<input type="checkbox" name="intrests" value="music" >Music<br><br>
+<input type="checkbox" name="intrests" value="sports" >Sports<br><br>
+<input type="checkbox" name="intrests" value="art" >Art<br><br>
+<input type="checkbox" name="intrests" value="dance" >Dance<br><br>
+<input type="checkbox" name="intrests" value="quiz">Quiz<br><br>
+<h3><u>CITY:</u></h3>
+ <select  name="city">
+            <option value="">--Select your city--</option>
+            <option value="kakinada">Kakinada</option>
+            <option value="hyderabad">Hyderabad</option>
+            <option value="vizag">Vizag</option>
+            <option value="bengaluru">Bengaluru</option>
+        </select>
+<h3><u>COMMENTS:</u></h3>
+<textarea name="comments" rows="5" cols="50" placeholder="write your Extra Details" required></textarea><br>
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+<button type="button" onclick="showConfirmation()">Register</button>
+
+</form>
+</body>
+</html>
